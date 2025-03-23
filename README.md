@@ -163,8 +163,6 @@ bank-app/
 │   ├── package.json
 │   └── README.md
 │
-├── database/                # Database (MySQL)
-│   ├── schema.sql           # SQL schema for the database
-│   └── README.md
+├
 │
 └── README.md                # Main README for the entire project
