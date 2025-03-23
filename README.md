@@ -51,3 +51,120 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL,
     phone_number VARCHAR(15) NOT NULL UNIQUE
 );
+2. UserInfo Table
+The userinfo table stores additional user information:
+
+sql
+Copy
+CREATE TABLE userinfo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    address VARCHAR(255),
+    city VARCHAR(100),
+    country VARCHAR(100),
+    postal_code VARCHAR(20),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+user_id: A foreign key that references the id column in the users table.
+
+address: The user's address.
+
+city: The user's city.
+
+country: The user's country.
+
+postal_code: The user's postal code.
+
+How to Run the Project
+1. Frontend (React)
+Navigate to the client folder:
+
+bash
+Copy
+cd client
+Install dependencies:
+
+bash
+Copy
+npm install
+Start the development server:
+
+bash
+Copy
+npm start
+2. Backend (Node.js)
+Navigate to the server folder:
+
+bash
+Copy
+cd server
+Install dependencies:
+
+bash
+Copy
+npm install
+Start the server:
+
+bash
+Copy
+node server.js
+3. Database (MySQL)
+Import the database schema:
+
+bash
+Copy
+mysql -u root -p bank_app < database/schema.sql
+Contributing
+Feel free to contribute to this project by opening issues or submitting pull requests.
+
+License
+This project is licensed under the MIT License.
+
+How to Use This README.md on GitHub
+Create a New Repository:
+
+Go to your GitHub account and create a new repository.
+
+Add the README.md File:
+
+Copy the content above into a new file named README.md.
+
+Add this file to the root of your repository.
+
+Push Your Code:
+
+Use Git to push your project code to the repository. For example:
+
+bash
+Copy
+git add .
+git commit -m "Initial commit with README.md"
+git push origin main
+View the README:
+
+Once pushed, the README.md will automatically render on the main page of your GitHub repository, providing a clear overview of your project.
+
+Example of a GitHub Repository Structure
+Copy
+bank-app/
+│
+├── client/                  # Frontend (React)
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── styles/
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+│
+├── server/                  # Backend (Node.js)
+│   ├── server.js            # Main server file
+│   ├── package.json
+│   └── README.md
+│
+├── database/                # Database (MySQL)
+│   ├── schema.sql           # SQL schema for the database
+│   └── README.md
+│
+└── README.md                # Main README for the entire project
