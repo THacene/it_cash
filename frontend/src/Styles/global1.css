@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #0A192F;
+    color: white;
+}
+
+.dashboard {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+

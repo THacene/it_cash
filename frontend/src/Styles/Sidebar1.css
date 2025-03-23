@@ -1,0 +1,42 @@
+.sidebar {
+    width: 280px;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    margin-left: -700px;
+    margin-top: 30px;
+}
+
+.sidebar h2 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebar a:hover {
+    background: #f0f0f0;
+}

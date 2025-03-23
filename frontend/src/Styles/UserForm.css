@@ -1,0 +1,48 @@
+.user-form {
+    margin-left: 280px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .user-form h3 {
+    margin-bottom: 15px;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .input-field label {
+    margin-bottom: 5px;
+  }
+  
+  .input-field input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #1e3a5f;
+    color: white;
+  }
+  
+  .input-field input::placeholder {
+    color: #ccc;
+  }
+  .description{
+    height: 100px;
+}
+  .profile-uploader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  

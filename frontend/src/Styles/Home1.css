@@ -1,0 +1,112 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.first-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    color: white;
+    text-align: center;
+    background: url("../assets/background.png") no-repeat center center/cover;
+}
+
+/* Text Section */
+.text-section {
+    max-width: 700px;
+    text-align: left;
+    margin-top: -100px;
+}
+
+/* Title */
+.text-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.text-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 7px;
+    
+}
+
+/* CTA Container */
+.cta-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+   
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* CTA Text */
+.cta-text {
+    color: white;
+    font-size: 16px;
+}
+.gotodash-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.gotodash{
+    
+    color: rgb(26, 4, 4);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+.gotodash:hover{
+    background-color: #b5afc2;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    background: #042446;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.footer div {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

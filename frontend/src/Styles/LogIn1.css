@@ -1,0 +1,103 @@
+
+
+.login-container {
+    background-image: url("../assets/background.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: vh;  /* Ensures full-page height */
+    background-color: rgba(4, 36, 70, 0.95);;
+    padding: 20px;
+    margin-left: 0px;
+    margin-top: 250px;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-container h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: #efefef;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+form input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+form input:focus {
+    border-color: #0096ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 150, 255, 0.5);
+}
+
+form button{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    background-color: #ffffff;
+    
+}
+form button.Log-in{
+    margin-left: 180px;
+}
+form button.password{
+    margin-left: 140px;
+
+}
+
+
+
+
+.login-btn:hover {
+    background-color: #007acc;
+}
+
+
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .login-box h2 {
+        font-size: 22px;
+    }
+
+    form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

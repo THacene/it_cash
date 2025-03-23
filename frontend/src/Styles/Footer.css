@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    align-items: center;
+    padding: 40px 2%;
+    background: #042446;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: -30px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
